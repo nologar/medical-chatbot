@@ -1,9 +1,12 @@
 import streamlit as st
 import requests
 
-st.set_page_config(page_title="Asistente Médico", page_icon="🩺")
+st.set_page_config(
+    page_title="Asistente Cardiológico de Derivación",
+    page_icon="🫀🩺"
+)
 
-st.title("🩺 Asistente Médico de Triaje")
+st.title("🫀🩺 Asistente Cardiológico de Derivación")
 st.markdown("Introduce una consulta clínica y obtendrás una recomendación basada en guías clínicas.")
 
 prompt = st.text_area("Consulta médica", placeholder="Ej. ¿Qué hago si el paciente tiene disnea y ECG anómalo?", height=150)
